@@ -1,0 +1,17 @@
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #1a1d1b; /* Cambia el color del texto a rojo (#e53935) */
+    margin-bottom: 20px;
+  }
+  
+  app-menu {
+    margin-top: 20px;
+  }
+  
+  router-outlet {
+    display: block;
+    margin-top: 20px;
+  }
+  

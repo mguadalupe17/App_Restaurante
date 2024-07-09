@@ -1,0 +1,27 @@
+<!-- tu-componente.component.html -->
+<div class="container">
+    <h2>Atención del Mesero</h2>
+    <form (ngSubmit)="enviarCalificacion()">
+      <div class="form-group">
+        <label>Calificación:</label>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5" [(ngModel)]="calificacion" required>
+          <label for="star5" title="Excelente">★</label>
+          <input type="radio" id="star4" name="rating" value="4" [(ngModel)]="calificacion">
+          <label for="star4" title="Muy Bueno">★</label>
+          <input type="radio" id="star3" name="rating" value="3" [(ngModel)]="calificacion">
+          <label for="star3" title="Bueno">★</label>
+          <input type="radio" id="star2" name="rating" value="2" [(ngModel)]="calificacion">
+          <label for="star2" title="Regular">★</label>
+          <input type="radio" id="star1" name="rating" value="1" [(ngModel)]="calificacion">
+          <label for="star1" title="Malo">★</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="sugerencias">Sugerencias:</label>
+        <textarea id="sugerencias" name="sugerencias" class="form-control" [(ngModel)]="sugerencias"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar Calificación</button>
+    </form>
+  </div>
+  
